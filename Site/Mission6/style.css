@@ -1,0 +1,33 @@
+body {
+  margin-right: 300px;
+  margin-left: 300px;
+  border: 5px solid black;
+  border-radius: 30px;
+}
+
+.box:first-of-type {
+  background-color: grey;
+  box-shadow: 5px 5px 5px black;
+}
+
+.box {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
+/* .container {
+    border: 5px solid green;
+    border-radius: 30px;
+} */
+
+
+img {
+  height: 200px;
+  border-radius: 30px;
+}
+
+.box {
+  border: 2px solid black;
+  margin: 10px;
+  border-radius: 10px;
+}

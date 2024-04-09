@@ -1,0 +1,12 @@
+img {
+    width: 400px;
+    height: 250px;
+    border: thick double #32a1ce;
+    border-radius: 25px;
+
+}
+
+div {
+    display: inline-block;
+    margin: 10px;
+}

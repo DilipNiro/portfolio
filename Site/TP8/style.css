@@ -1,0 +1,39 @@
+body {
+    background-color: grey;
+}
+
+table,
+td {
+    border: 1px solid #333;
+    text-align: center;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+    height: 45px;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+input,
+button {
+    border-radius: 30px;
+    width: 95%;
+    height: 45px;
+    text-align: center;
+
+}
+
+td {
+    height: 45px;
+}

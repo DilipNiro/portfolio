@@ -1,0 +1,64 @@
+body{
+    background-color: hotpink;
+}
+
+h1{
+    color: red;
+    font-size: 40px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+p{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+div{
+    transition: all 1s ease;
+}
+.Groupe1{
+    background-color: white;
+    
+    width: 25%;
+    margin-bottom: 5%;
+    padding: 3%;
+    border-radius: 7%;
+    margin-left: auto;
+    margin-right: auto;
+ 
+
+   
+ 
+}
+
+.Groupe2{
+   
+    border-radius: 50%;
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.b1{
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+}
+
+div:hover{
+    background-color:wheat;
+    transform:scale(1.02);
+}

@@ -1,0 +1,15 @@
+img {
+    width: 600px;
+    height: 350px;
+    border-style: inset;
+    border-color: coral;
+    border-width: 7px;
+    border-radius: 25px;
+    margin: auto;
+
+}
+
+div {
+    display: inline-block;
+    margin: 10px;
+}

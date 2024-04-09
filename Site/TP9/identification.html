@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="tp9.js"></script>
+</head>
+
+<body>
+    <h1>Page d'identification</h1>
+    <div>
+        username : <input type="text" name="t1" id="t1"> <br>
+        password : <input type="password" name="t2" id="t2"> <br>
+
+
+        <button onclick="connexion2()">Connexion</button>
+        <button>Annuler</button>
+
+    </div>
+
+    <script>
+        function connexion2() {
+            var username = document.getElementById('t1').value;
+            var password = document.getElementById('t2').value;
+            if (username == "admin" && password == "admin") {
+                window.location.href = "page1.html";
+            } else {
+                window.location.href = "page2.html";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

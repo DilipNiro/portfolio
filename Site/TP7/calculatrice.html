@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calcu.css">
+    <script src="calcu.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>Calculatrice</h1>
+        <div>
+            <input class="number" type="number" name="t1" id="t1" placeholder="Premier Chiffre">
+            <input class="number" type="number" name="t2" id="t2" placeholder="Deuxième Chiffre">
+        </div>
+        <div>
+            <button onclick="addition()">+</button>
+            <button onclick="soustraction()">-</button>
+            <button onclick="division()">/</button>
+            <button onclick="multiplication()">x</button>
+        </div>
+        <div></div>
+        <button onclick="parite()">Pariter</button>
+        <button onclick="permuter()">Permuter</button>
+        </div>
+        <div>
+            <input class="bottom" type="text" name="t3" id="t3" placeholder="Résultat"> <br>
+            <input class="bottom" type="text" name="t4" id="t4" placeholder="Pair ou Impair">
+        </div>
+
+    </center>
+</body>
+
+</html>

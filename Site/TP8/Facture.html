@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="facture.js"></script>
+</head>
+
+
+<body>
+    <center>
+        <h1>Facture en JavaScript</h1>
+
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Article :</th>
+                    <th>Prix :</th>
+                    <th>Quantité</th>
+                    <th>Résultat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" placeholder="A1" name="a1" id="a1"></td>
+                    <td><input class="number" type="number" name="t1" id="t1"></td>
+                    <td><input class="quantity" type="number" name="q1" id="q1"></td>
+                    <td> <input type="text" placeholder="R1" name="r1" id="r1" readonly></td>
+
+
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="A2" name="a2" id="a2"></td>
+                    <td><input class="number" type="number" name="t2" id="t2"></td>
+                    <td><input class="quantity" type="number" name="q2" id="q2"></td>
+                    <td> <input type="text" placeholder="R2" name="r2" id="r2" readonly></td>
+
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="A3" name="a3" id="a3"></td>
+                    <td><input class="number" type="number" name="t3" id="t3"></td>
+                    <td><input class="quantity" type="number" name="q3" id="q3"></td>
+                    <td> <input type="text" placeholder="R3" name="r3" id="r3" readonly></td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <button onclick="reset()">Rénitialiser</button> </td>
+                    <td> <button onclick="result()">Résultat</button></td>
+                    <td> <input type="text" placeholder="Total" name="r4" id="r4" readonly></td>
+                </tr>
+    </center>
+    </tbody>
+    </table>
+</body>
+
+</html>
