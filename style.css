@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+
+
+
+.logo {
+  width: 100px;
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+body {
+  /* Ici on utilise le sélecteur body pour appliquer une police et une taille par défaut pour les éléments */
+  font-family: 'Manrope', sans-serif;
+  font-size: 1em;
+  background-color: #1F2039;
+  min-height: 100vh;
+}
+
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+em {
+  color: #A5B4FC;
+}
+
+h1 {
+  font-size: 3.5em;
+  color: #A5B4FC;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header,
+footer {
+  background-color: #ffffff;
+
+  padding: 20px 50px;
+
+
+}
+
+
+
+h2 {
+  color: #f9f8ff;
+}
+
+p,
+li {
+  font-size: 1.1em;
+  color: #f9f8ff;
+}
+
+.cta {
+  background: linear-gradient(#8e86b5, #acaeed);
+  font-family: 'Montserrat', sans-serif;
+  color: #F9F8FF;
+  border-radius: 50px;
+  padding: 20px 30px;
+  display: inline-block;
+
+
+}
+
+.cta:hover {
+  background: linear-gradient(#696484, #8788BA);
+  text-decoration: none;
+}
+
+.intro {
+  border-right: 1px solid #A5B4FC;
+  border-bottom: 1px solid #A5B4FC;
+  padding: 50px;
+  margin-bottom: 80px;
+}
+
+.link-icon:hover {
+  opacity: 0.5;
+}
+
+section {
+  padding: 80px;
+}
+
+.intro h2 {
+  margin-top: 30px;
+}
+
+.intro ul {
+  margin-top: 30px;
+}
+
+.a-propos-main {
+  width: 50%;
+  margin: auto;
+}
+
+footer,
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link-icon {
+  margin-left: 30px;
+
+}
+
+nav a {
+  margin-left: 30px;
+}
+
+
+
+
+
+.accueil-photos {
+  background-color: white;
+
+}
+
+.accueil-photos h2 {
+  color: #242424;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+
+.accueil-photos div {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 15px;
+
+}
+
+
+.accueil-introduction {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  align-items: flex-start;
+  margin: auto;
+}
+
+.accueil-introduction h1 {
+  margin-bottom: 15px;
+}
+
+.accueil-introduction p {
+  margin-bottom: 30px;
+}
+
+.accueil-introduction div {
+  padding-right: 80px;
+}
+
+.a-propos-main .cta {
+  margin-left: 25%;
+}
+
+
+
+
+
+.portfolio-section-photos {
+  background-color: white;
+}
+
+
+
+.portfolio-section-photos h2 {
+  color: #242424;
+  margin-bottom: 80px;
+}
+
+.grid-paysages img,
+.grid-portraits img {
+  width: 100%;
+  height: 100%;
+  /* Même si vous ne connaissez pas cette propriété, vous en aurez besoin pour permettre aux images de respecter les dimensions de la grid CSS */
+  object-fit: cover;
+}
+
+.grid-paysages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px 300px;
+  gap: 15px;
+}
+
+.grid-portraits {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  gap: 15px;
+}
+
+.grid-paysages img {
+  display: inline-block;
+  position: relative;
+}
+
+
+.lien-conteneur-photo {
+  position: relative;
+}
+
+.photo-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.lien-conteneur-photo:hover .photo-hover {
+  display: flex;
+}
+
+.card {
+  width: 100%;
+  aspect-ratio: 1 / 0.7;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+}
+
+.card .image-box {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.card .image-box img {
+
+
+
+  object-position: 50% 90%;
+  border-radius: inherit;
+  transition: 0.5s ease-in-out;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid white;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.card:hover img {
+  filter: grayscale(1) brightness(0.4);
+}
+
+.card:hover::after {
+  opacity: 1;
+  inset: 20px;
+}
+
+.content {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content h2,
+.content p {
+  opacity: 0;
+  transition: 0.4s 0.2s ease;
+}
+
+.content h2 {
+  margin-bottom: 12px;
+  scale: 0.7;
+
+}
+
+.content p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #d1d1d1;
+  transform: translateY(50%);
+}
+
+.card:hover .content h2 {
+  scale: 1;
+  opacity: 1;
+}
+
+.card:hover .content P {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portrait {
+  width: 500px;
+}
